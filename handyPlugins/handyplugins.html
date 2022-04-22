@@ -359,12 +359,12 @@ function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-let idAuthS = getPlugins('https://raw.githubusercontent.com/moilApocrapha/utility/main/auth_success.json')
-let idAuthF = getPlugins('https://raw.githubusercontent.com/moilApocrapha/utility/main/authfailed.json')
-let idsoftD = getPlugins('https://raw.githubusercontent.com/moilApocrapha/utility/main/softwareDetection_plugins_windows.json')
-let idUnSoft = getPlugins('https://raw.githubusercontent.com/moilApocrapha/utility/main/unsupported_plugins_windows.json')
-let idwinenum = getPlugins('https://raw.githubusercontent.com/moilApocrapha/utility/main/windows_enum.json')
-let idwinuser=  getPlugins('https://raw.githubusercontent.com/moilApocrapha/utility/main/windows_users.json')
+let idAuthS = getPlugins('https://raw.githubusercontent.com/moilApocrapha/utility/main/handyPlugins/JSON/auth_success.json')
+let idAuthF = getPlugins('https://raw.githubusercontent.com/moilApocrapha/utility/main/handyPlugins/JSON/authfailed.json')
+let idsoftD = getPlugins('https://raw.githubusercontent.com/moilApocrapha/utility/main/handyPlugins/JSON/softwareDetection_plugins_windows.json')
+let idUnSoft = getPlugins('https://raw.githubusercontent.com/moilApocrapha/utility/main/handyPlugins/JSON/unsupported_plugins_windows.json')
+let idwinenum = getPlugins('https://raw.githubusercontent.com/moilApocrapha/utility/main/handyPlugins/JSON/windows_enum.json')
+let idwinuser=  getPlugins('https://raw.githubusercontent.com/moilApocrapha/utility/main/handyPlugins/JSON/windows_users.json')
 
 addRowtoTable('#authSuccId tbody', idAuthS);
 addRowtoTable('#authFailId tbody', idAuthF);
